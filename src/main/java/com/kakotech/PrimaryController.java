@@ -1,9 +1,19 @@
 package com.kakotech;
 
 import java.io.IOException;
+
+
+import java.net.URL;
+import java.util.ResourceBundle;
+
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.SplitPane;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.cell.TextFieldTableCell;
 
 public class PrimaryController {
 
@@ -52,5 +62,67 @@ public class PrimaryController {
         askPane.setDisable(false);
         askPane.setVisible(true);
     }
+
+    public void setTableData(){
+        TableColumn columnEng = new TableColumn("English");
+        columnEng.setMinWidth(100);
+        columnEng.setCellFactory(TextFieldTableCell.forTableColumn());
+        //columnEng.setCellValueFactory(new PropertyValueFactory<Person, String>("lastName"));
+    }
+
+    private final ObservableList<Line> data =
+            FXCollections.observableArrayList(
+                    new Line("english1", "hungarian1", "example sentence1"),
+                    new Line("english2", "hungarian2", "example sentence2"),
+                    new Line("english3", "hungarian3", "example sentence3")
+            );
+
+    @Override
+    public void initialize(URL url, ResourceBundle rb){
+        TableColumn columnEng = new TableColumn("English word");
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }

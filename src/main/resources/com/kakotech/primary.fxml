@@ -37,9 +37,9 @@
       </MenuBar>
       <AnchorPane layoutY="27.0" prefHeight="57.0" prefWidth="1000.0" style="-fx-background-color: #ffff;">
          <children>
-            <Button id="dictionaryButton" fx:id="dictionaryButton" layoutY="1.0" mnemonicParsing="false" onAction="#switchToDictionaryPage" prefHeight="60.0" prefWidth="130.0" text="dictionaryButton" />
-            <Button id="addWordButton" fx:id="addWordButton" layoutX="130.0" layoutY="1.0" mnemonicParsing="false" onAction="#switchToAddWordsPage" prefHeight="60.0" prefWidth="130.0" text="addWordButton" />
-            <Button id="askButton" fx:id="askButton" layoutX="260.0" layoutY="1.0" mnemonicParsing="false" onAction="#switchToAskPage" prefHeight="60.0" prefWidth="130.0" text="askButton" />
+            <Button id="dictionaryButton" fx:id="dictionaryButton" layoutY="1.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="130.0" text="dictionaryButton" onAction="#switchToDictionaryPage"/>
+            <Button id="addWordButton" fx:id="addWordButton" layoutX="130.0" layoutY="1.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="130.0" text="addWordButton" onAction="#switchToAddWordsPage"/>
+            <Button id="askButton" fx:id="askButton" layoutX="260.0" layoutY="1.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="130.0" text="askButton" onAction="#switchToAskPage"/>
          </children>
       </AnchorPane>
       <SplitPane id="askPane" fx:id="askPane" dividerPositions="0.12925851703406813" layoutY="88.0" prefHeight="720.0" prefWidth="1000.0">
@@ -63,10 +63,13 @@
                <children>
                   <TableView id="DictionaryTable" fx:id="DictionaryTable" prefHeight="720.0" prefWidth="866.0">
                      <placeholder>
-                        <Label text="No data" />
+                        <Label text="Nincs adat." />
                      </placeholder>
                      <columns>
-
+                     </columns>
+                     <columns>
+                     </columns>
+                     <columns>
                      </columns>
                   </TableView>
                </children></AnchorPane>

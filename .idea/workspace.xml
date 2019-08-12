@@ -2,33 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3dc8621-b7f7-4233-8374-3667aa0daa85" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dictionary.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kakotech/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kakotech/PrimaryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kakotech/SecondaryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/kakotech/primary.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/kakotech/secondary.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/kakotech/App.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/kakotech/PrimaryController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/kakotech/SecondaryController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/kakotech/primary.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/kakotech/secondary.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/null/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/null/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kakotech/Line.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kakotech/PrimaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kakotech/PrimaryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/kakotech/primary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/kakotech/primary.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kakotech/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kakotech/PrimaryController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kakotech/SecondaryController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kakotech/primary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kakotech/primary.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/null/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/null/createdFiles.lst" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -108,8 +103,20 @@
       <workItem from="1564563624383" duration="281000" />
       <workItem from="1564645061069" duration="1976000" />
       <workItem from="1564679429070" duration="3187000" />
-      <workItem from="1564732385930" duration="2601000" />
+      <workItem from="1564732385930" duration="3486000" />
+      <workItem from="1565435866289" duration="1405000" />
+      <workItem from="1565516530297" duration="3519000" />
+      <workItem from="1565524598277" duration="562000" />
+      <workItem from="1565620863851" duration="1341000" />
     </task>
+    <task id="LOCAL-00001" summary="working switch buttons">
+      <created>1564740086690</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1564740086690</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,10 +127,16 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="working switch buttons" />
+    <option name="LAST_COMMIT_MESSAGE" value="working switch buttons" />
   </component>
 </project>
