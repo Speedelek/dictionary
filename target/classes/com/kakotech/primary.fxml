@@ -37,9 +37,9 @@
       </MenuBar>
       <AnchorPane layoutY="27.0" prefHeight="57.0" prefWidth="1000.0" style="-fx-background-color: #ffff;">
          <children>
-            <Button id="dictionaryButton" fx:id="dictionaryButton" layoutY="1.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="130.0" text="dictionaryButton" onAction="#switchToDictionaryPage"/>
-            <Button id="addWordButton" fx:id="addWordButton" layoutX="130.0" layoutY="1.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="130.0" text="addWordButton" onAction="#switchToAddWordsPage"/>
-            <Button id="askButton" fx:id="askButton" layoutX="260.0" layoutY="1.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="130.0" text="askButton" onAction="#switchToAskPage"/>
+            <Button id="dictionaryButton" fx:id="dictionaryButton" layoutY="1.0" mnemonicParsing="false" onAction="#switchToDictionaryPage" prefHeight="60.0" prefWidth="130.0" text="dictionaryButton" />
+            <Button id="addWordButton" fx:id="addWordButton" layoutX="130.0" layoutY="1.0" mnemonicParsing="false" onAction="#switchToAddWordsPage" prefHeight="60.0" prefWidth="130.0" text="addWordButton" />
+            <Button id="askButton" fx:id="askButton" layoutX="260.0" layoutY="1.0" mnemonicParsing="false" onAction="#switchToAskPage" prefHeight="60.0" prefWidth="130.0" text="askButton" />
          </children>
       </AnchorPane>
       <SplitPane id="askPane" fx:id="askPane" dividerPositions="0.12925851703406813" layoutY="88.0" prefHeight="720.0" prefWidth="1000.0">
@@ -50,29 +50,6 @@
                </children>
             </AnchorPane>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
-         </items>
-      </SplitPane>
-      <SplitPane id="dictionaryPane" fx:id="dictionaryPane" dividerPositions="0.12925851703406813" layoutY="88.0" prefHeight="720.0" prefWidth="1000.0">
-         <items>
-            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
-               <children>
-                  <Label prefHeight="42.0" prefWidth="126.0" text="Search words in alphabet orders" textAlignment="CENTER" wrapText="true" />
-               </children>
-            </AnchorPane>
-            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
-               <children>
-                  <TableView id="DictionaryTable" fx:id="DictionaryTable" prefHeight="720.0" prefWidth="866.0">
-                     <placeholder>
-                        <Label text="Nincs adat." />
-                     </placeholder>
-                     <columns>
-                     </columns>
-                     <columns>
-                     </columns>
-                     <columns>
-                     </columns>
-                  </TableView>
-               </children></AnchorPane>
          </items>
       </SplitPane>
       <SplitPane id="addWordsPane" fx:id="addWordsPane" dividerPositions="0.12925851703406813" layoutY="88.0" prefHeight="720.0" prefWidth="1000.0">
@@ -91,6 +68,29 @@
                   <Label layoutX="331.0" layoutY="70.0" text="Hungarian" />
                   <Label layoutX="607.0" layoutY="70.0" text="Example sentence" />
                   <Button id="AddWordButton" fx:id="AddWordButton" layoutX="106.0" layoutY="290.0" mnemonicParsing="false" text="Send" />
+               </children></AnchorPane>
+         </items>
+      </SplitPane>
+      <SplitPane id="dictionaryPane" fx:id="dictionaryPane" dividerPositions="0.12925851703406813" layoutY="88.0" prefHeight="720.0" prefWidth="1000.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Label prefHeight="42.0" prefWidth="126.0" text="Search words in alphabet orders" textAlignment="CENTER" wrapText="true" />
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TableView id="tableDictionary" fx:id="tableDictionary" prefHeight="720.0" prefWidth="866.0">
+                     <placeholder>
+                        <Label text="Nincs adat." />
+                     </placeholder>
+                     <columns>
+                     </columns>
+                     <columns>
+                     </columns>
+                     <columns>
+                     </columns>
+                  </TableView>
                </children></AnchorPane>
          </items>
       </SplitPane>

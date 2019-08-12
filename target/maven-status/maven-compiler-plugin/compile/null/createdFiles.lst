@@ -1,2 +1,5 @@
 com\kakotech\Line.class
+com\kakotech\PrimaryController.class
 module-info.class
+com\kakotech\App.class
+com\kakotech\SecondaryController.class
