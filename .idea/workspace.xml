@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3dc8621-b7f7-4233-8374-3667aa0daa85" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/kakotech/App.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/kakotech/Line.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/kakotech/PrimaryController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kakotech/App.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kakotech/PrimaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kakotech/PrimaryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kakotech/SecondaryController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/kakotech/primary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/kakotech/primary.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/kakotech/secondary.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/kakotech/primary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kakotech/primary.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/null/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/null/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/null/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/null/inputFiles.lst" afterDir="false" />
@@ -19,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -40,7 +45,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../gitClones/Progkorny-bead" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -51,6 +56,15 @@
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="com.kakotech" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.kakotech" />
+      <recent name="com.kakotech.controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Akos\Documents\Projects\dictionary\src\main\resources\com\kakotech" />
+      <recent name="C:\Users\Akos\Documents\Projects\dictionary\src\main\resources\com\kakotech\contorller" />
+      <recent name="C:\Users\Akos\Documents\Projects\dictionary\src\main\resources\com\kakotech\controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -111,7 +125,13 @@
       <workItem from="1565435866289" duration="1405000" />
       <workItem from="1565516530297" duration="3519000" />
       <workItem from="1565524598277" duration="562000" />
-      <workItem from="1565620863851" duration="6575000" />
+      <workItem from="1565620863851" duration="7069000" />
+      <workItem from="1565688430630" duration="1782000" />
+      <workItem from="1565697578435" duration="61000" />
+      <workItem from="1565702064089" duration="2842000" />
+      <workItem from="1565709393616" duration="1958000" />
+      <workItem from="1565791728524" duration="1186000" />
+      <workItem from="1565801570031" duration="3823000" />
     </task>
     <task id="LOCAL-00001" summary="working switch buttons">
       <created>1564740086690</created>
@@ -127,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565636388160</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="working initialize method">
+      <created>1565643781256</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1565643781256</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +176,19 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="working switch buttons" />
     <MESSAGE value="initialize" />
-    <option name="LAST_COMMIT_MESSAGE" value="initialize" />
+    <MESSAGE value="working initialize method" />
+    <option name="LAST_COMMIT_MESSAGE" value="working initialize method" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/main/java/com/kakotech/PrimaryController.java</url>
+          <line>47</line>
+          <properties field="AddNewWordButton" class="com.kakotech.PrimaryController" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
