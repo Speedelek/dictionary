@@ -1,13 +1,14 @@
 package com.kakotech;
 
-import java.io.IOException;
-
 
 import java.net.URL;
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ResourceBundle;
 
-import com.kakotech.App;
-import com.kakotech.Line;
+import com.kakotech.Connectivity.ConnectionClass;
+import com.kakotech.db.Line;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -47,10 +48,7 @@ public class PrimaryController implements Initializable {
     @FXML
     Button AddNewWordButton;
 
-    /*@FXML
-    private void switchToSecondary() throws IOException {
-        App.setRoot("secondary");
-    }*/
+
 
     @FXML
     private void switchToDictionaryPage(){
@@ -96,11 +94,18 @@ public class PrimaryController implements Initializable {
             );
 
     @FXML
-    private void addNewWord(ActionEvent event){
+    private void addNewWord(ActionEvent event) throws SQLException {
         data.add(new Line(inputEnglishWord.getText(),inputHungarianWord.getText(),inputExampleSentence.getText()));
         inputEnglishWord.clear();
         inputHungarianWord.clear();
         inputExampleSentence.clear();
+
+        ConnectionClass connectionClass = new ConnectionClass();
+        Connection connection = connectionClass.getConnection();
+
+        String sql = "INSERT INTO TEST VALUES('"+inputEnglishWord.getText()+"')";
+        Statement statement = connection.createStatement();
+        statement.executeUpdate(sql);
     }
 
     public void setTable(){
