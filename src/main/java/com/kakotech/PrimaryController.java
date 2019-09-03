@@ -8,7 +8,6 @@ import java.sql.Statement;
 import java.util.ResourceBundle;
 
 import com.kakotech.Connectivity.ConnectionClass;
-import com.kakotech.db.Line;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -47,6 +46,8 @@ public class PrimaryController implements Initializable {
     TextField inputExampleSentence;
     @FXML
     Button AddNewWordButton;
+
+    int wordsSum = 0;
 
 
 
@@ -89,23 +90,37 @@ public class PrimaryController implements Initializable {
     private final ObservableList<Line> data =
             FXCollections.observableArrayList(
                     new Line("absence", "hiány", "A new teacher was appointed during his absence."),
-                    new Line("duke", "herceg", "A duki is a man of very high rank."),
+                    new Line("duke", "herceg", "A duke is a man of very high rank."),
                     new Line("earl", "gróf", "An earl is a man of high social rank.")
             );
 
     @FXML
-    private void addNewWord(ActionEvent event) throws SQLException {
+    private void addNewWord(ActionEvent event) throws SQLException { //throws SQLException {
         data.add(new Line(inputEnglishWord.getText(),inputHungarianWord.getText(),inputExampleSentence.getText()));
-        inputEnglishWord.clear();
-        inputHungarianWord.clear();
-        inputExampleSentence.clear();
+        System.out.println(data);
+
+        wordsSum++;
 
         ConnectionClass connectionClass = new ConnectionClass();
         Connection connection = connectionClass.getConnection();
 
-        String sql = "INSERT INTO TEST VALUES('"+inputEnglishWord.getText()+"')";
+        //String sql = "INSERT INTO DICTIONARY VALUES ('"+inputEnglishWord.getText()+"')";
+
+        //le kell kerdezni elotte hogy hanyadik szo kovetkezuk kulonben nem mukodik
+        String sql = "INSERT INTO DICTIONARY (id,english,hungarian,examplesentence) " +
+                "VALUES ('"+wordsSum+"','"+inputEnglishWord.getText()+"'," +
+                "'"+inputHungarianWord.getText()+"'," +
+                "'"+inputExampleSentence.getText()+"')";
+
+        System.out.println(sql);
+        System.out.println(inputEnglishWord.getText());
         Statement statement = connection.createStatement();
         statement.executeUpdate(sql);
+
+        inputEnglishWord.clear();
+        inputHungarianWord.clear();
+        inputExampleSentence.clear();
+
     }
 
     public void setTable(){

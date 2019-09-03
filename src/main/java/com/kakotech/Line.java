@@ -1,4 +1,4 @@
-package com.kakotech.db;
+package com.kakotech;
 
 import javafx.beans.property.SimpleStringProperty;
 
