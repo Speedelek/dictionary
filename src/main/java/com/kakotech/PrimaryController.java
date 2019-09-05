@@ -3,6 +3,7 @@ package com.kakotech;
 
 import java.net.URL;
 import java.sql.Connection;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ResourceBundle;
@@ -49,6 +50,8 @@ public class PrimaryController implements Initializable {
 
     int wordsSum = 0;
 
+    ConnectionClass connectionClass = new ConnectionClass();
+
 
 
     @FXML
@@ -89,9 +92,9 @@ public class PrimaryController implements Initializable {
 
     private final ObservableList<Line> data =
             FXCollections.observableArrayList(
-                    new Line("absence", "hiány", "A new teacher was appointed during his absence."),
-                    new Line("duke", "herceg", "A duke is a man of very high rank."),
-                    new Line("earl", "gróf", "An earl is a man of high social rank.")
+                    //new Line("absence", "hiány", "A new teacher was appointed during his absence."),
+                    //new Line("duke", "herceg", "A duke is a man of very high rank."),
+                    //new Line("earl", "gróf", "An earl is a man of high social rank.")
             );
 
     @FXML
@@ -101,7 +104,7 @@ public class PrimaryController implements Initializable {
 
         wordsSum++;
 
-        ConnectionClass connectionClass = new ConnectionClass();
+
         Connection connection = connectionClass.getConnection();
 
         //String sql = "INSERT INTO DICTIONARY VALUES ('"+inputEnglishWord.getText()+"')";
@@ -183,6 +186,23 @@ public class PrimaryController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb){
+
+        Connection connection = connectionClass.getConnection();
+
+        try {
+
+            ResultSet resultSet = connection.createStatement().executeQuery("select * from dictionary");
+
+            while (resultSet.next()){
+                wordsSum = resultSet.getInt("id");
+                data.add(new Line(resultSet.getString("english"),
+                        resultSet.getString("hungarian"),
+                        resultSet.getString("examplesentence")));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
         setTable();
     }
 
